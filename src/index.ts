@@ -30,7 +30,12 @@ app.use(
 );
 
 app.use(json());
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://kigalihotmarket-frontend.vercel.app"],
+    credentials: true,
+  }),
+);
 app.use("/docs", swaggerUi.serve, async (_req: ExRequest, res: ExResponse) => {
   return res.send(
     //@ts-ignore
