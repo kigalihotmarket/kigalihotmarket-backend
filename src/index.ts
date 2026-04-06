@@ -32,7 +32,7 @@ app.use(
 app.use(json());
 app.use(
   cors({
-    origin: ["https://kigalihotmarket-frontend.vercel.app", "https://kigalihotmarket-fontend-hs54pegw0.vercel.app"],
+    origin: ["https://kigalihotmarket-frontend.vercel.app", "https://kigalihotmarket-fontend-hs54pegw0.vercel.app", "http://localhost:4173"],
     credentials: true,
   }),
 );
